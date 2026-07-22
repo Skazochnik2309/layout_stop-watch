@@ -53,8 +53,9 @@ body {
   &__center {
     height: 5vmin;
     width: 5vmin;
-    top: calc(50% - 2.5vmin);
-    left: calc(50% - 2.5vmin);
+    top: calc(50%);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
     border-radius: 50%;
     background: #f6a603;
     position: absolute;
