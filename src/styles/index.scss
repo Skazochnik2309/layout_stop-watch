@@ -15,10 +15,9 @@ body {
   margin: 0;
 }
 
-
 .title {
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .stopwatch {
@@ -52,7 +51,6 @@ body {
     animation: 60s linear infinite rotate360;
   }
 
-
   &__center {
     height: 5vmin;
     width: 5vmin;
@@ -64,10 +62,10 @@ body {
   }
 
   &--speed-up {
-    &__seconds {
+    .stopwatch__seconds {
       animation-duration: 10s;
     }
-    &__minutes {
+    .stopwatch__minutes {
       animation-duration: 600s;
     }
   }
