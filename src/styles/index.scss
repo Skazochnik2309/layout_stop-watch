@@ -1,3 +1,74 @@
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   margin: 0;
+}
+
+
+.title {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.stopwatch {
+  height: 80vmin;
+  width: 80vmin;
+  border-radius: 80vmin;
+  border: 1vmin dotted #000;
+  background: #000;
+  position: relative;
+  margin: 0 auto;
+
+  &__minutes {
+    height: 20vmin;
+    width: 3vmin;
+    background: #0700ff;
+    position: absolute;
+    top: calc(50% - 20vmin);
+    left: calc(50% - 1.5vmin);
+    transform-origin: 50% 100%;
+    animation: 3600s steps(60) infinite rotate360;
+  }
+
+  &__seconds {
+    height: 38vmin;
+    width: 1.5vmin;
+    background: #2c8000;
+    position: absolute;
+    top: calc(50% - 38vmin);
+    left: calc(50% - 0.75vmin);
+    transform-origin: 50% 100%;
+    animation: 60s linear infinite rotate360;
+  }
+
+
+  &__center {
+    height: 5vmin;
+    width: 5vmin;
+    top: calc(50% - 2.5vmin);
+    left: calc(50% - 2.5vmin);
+    border-radius: 50%;
+    background: #f6a603;
+    position: absolute;
+  }
+
+  &--speed-up {
+    &__seconds {
+      animation-duration: 10s;
+    }
+    &__minutes {
+      animation-duration: 600s;
+    }
+  }
 }
