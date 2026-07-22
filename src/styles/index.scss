@@ -26,7 +26,6 @@ body {
   border-radius: 80vmin;
   border: 1vmin dotted #000;
   position: relative;
-  box-sizing: border-box;
 
   &__minutes {
     height: 20vmin;
@@ -35,7 +34,7 @@ body {
     position: absolute;
     top: calc(50% - 20vmin);
     left: calc(50% - 1.5vmin);
-    transform-origin: 50% 100%;
+    transform-origin: bottom center;
     animation: 3600s steps(60) infinite rotate360;
   }
 
@@ -46,7 +45,7 @@ body {
     position: absolute;
     top: calc(50% - 38vmin);
     left: calc(50% - 0.75vmin);
-    transform-origin: 50% 100%;
+    transform-origin: bottom center;
     animation: 60s linear infinite rotate360;
   }
 
