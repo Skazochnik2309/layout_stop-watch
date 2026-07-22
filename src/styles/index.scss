@@ -34,7 +34,7 @@ body {
     position: absolute;
     top: calc(50% - 20vmin + 1.5vmin);
     left: calc(50% - 1.5vmin);
-    transform-origin: bottom center;
+    transform-origin: top center;
     animation: 3600s steps(60) infinite rotate360;
   }
 
@@ -45,7 +45,7 @@ body {
     position: absolute;
     top: calc(50% - 38vmin + 0.75vmin);
     left: calc(50% - 0.75vmin);
-    transform-origin: bottom center;
+    transform-origin: top center;
     animation: 60s linear infinite rotate360;
   }
 
